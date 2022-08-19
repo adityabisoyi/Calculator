@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 61);
+}
+
+.container {
+    background-color: rgb(68, 68, 139);
+    color: white;
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1000;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+}
+
+.display {
+    display: flex;
+    justify-content: right;
+    /* width: 40vw; */
+    width: 400px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    background: rgb(33, 33, 67);
+    border-radius: 7px;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    height: 57.6px;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    /* gap: 7% 2.6%; */
+    gap: 13px 2.6%;
+    background-color: rgb(33, 33, 67);
+    border-radius: 10px;
+    padding: 12px 12px;
+    margin: 15px 5px;
+    padding-bottom: 15px;
+}
+.btn {
+    background-color: rgb(255, 231, 199);
+    color: rgb(14, 14, 14);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 1px 3px rgb(218, 205, 188);
+}
+.reset {
+    background-color: rgb(108, 98, 173);
+    box-shadow: 1px 3px rgb(84, 77, 135);
+    grid-column: auto / span 2;
+    color: white;
+}
+.equ {
+    background-color: rgb(183, 0, 0);
+    box-shadow: 1px 3px rgb(137, 0, 0);
+    grid-column: auto / span 2;
+    color: white;
+}
+.del {
+    background-color: rgb(108, 98, 173);
+    box-shadow: 1px 3px rgb(84, 77, 135);
+    color: white;
+}
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+.container:hover {
+    cursor: default;
+}
+.btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    .display{
+        width: 300px;
+    }
+}
