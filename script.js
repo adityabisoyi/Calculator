@@ -154,10 +154,12 @@ function pressequ() {
         disp_el.textContent = num1 - num2
         opr = 0
     } else if(opr === 3) {
-        disp_el.textContent = num1 * num2
+        result = num1*num2
+        disp_el.textContent = result.toFixed(8)
         opr = 0
     } else if(opr === 4) {
-        disp_el.textContent = num1 / num2
+        result = num1/num2
+        disp_el.textContent = result.toFixed(8)
         opr = 0
     } else {
         disp_el.textContent = "error"
